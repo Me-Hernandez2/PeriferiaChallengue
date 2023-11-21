@@ -1,1 +1,29 @@
-<p>user-list works!</p>
+<div class="row">
+  <div class="col-12 d-flex justify-content-center">
+    <div class=" col-6 card-frost">
+      <h1 class="text-center">Lista de usuarios</h1>
+      <div class="search-container mb-3 mt-3">
+        <section class="layout-search text-center">
+          <div>
+            <input placeholder="Buscar usuario..." class="input-search" [(ngModel)]="searchTerm" (input)="filterProducts()">
+          </div>
+        </section>
+      </div>
+      <div class="list-group mb-3">
+        <a class="list-group-item animated fadeIn" aria-current="true"  *ngFor="let user of users">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">{{user.nombre}}</h5>
+            <small>{{user.correoElectronico}}</small>
+          </div>
+        </a>
+      </div>
+      <div class="text-center">
+        <button type="button" class="btn-root" (click)="reloadUsers()">{{time == 0 ? 'Recargar usuarios' : time }}</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+

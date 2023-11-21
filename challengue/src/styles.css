@@ -1,1 +1,77 @@
 /* You can add global styles to this file, and also import other style files */
+.body-root {
+
+  background-image: url("./assets/images/Moon.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.background-container {
+  /* Establece el tamaño mínimo del contenedor para evitar que el contenido se solape con la imagen de fondo */
+  min-height: 100vh; /* Establece la altura mínima del contenedor para ocupar toda la pantalla verticalmente */
+  /* Puedes agregar más estilos a tu contenedor, como colores de texto, márgenes, etc. */
+  font-family: 'Poppins', sans-serif;
+  padding: 24px;
+}
+
+.card-frost {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  color:white;
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-body {
+  line-height: 1.5;
+}
+
+.input-search{
+  border-radius: 2em;
+  border: none;
+  padding: 0.5em;
+}
+
+.btn-root{
+  background-color: #32325D;
+  color: white;
+  border-radius: 2em;
+  border: none;
+  padding: 0.5em;
+}
+
+/* Animaciones */
+
+.animated {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fast {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
